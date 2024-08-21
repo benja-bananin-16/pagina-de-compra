@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Reserva</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="uwp4320187.jpeg" class="carousel-item active" alt="Imagen 1">
+                <img src="wp3677154-regular-show-pops-wallpaper.jpg" class="carousel-item" alt="Imagen 2">
+                <img src="wp7021777-universidad-de-chile-wallpapers.png" class="carousel-item" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+
+        <!-- Sección de información lateral -->
+        <div class="info-section">
+            <h2>Reserva tu Evento</h2>
+            <p>Selecciona una fecha y haz tu reserva en nuestra plataforma.</p>
+            
+            <!-- Calendario de selección -->
+            <label for="fecha">selecciona la fecha:</label>
+            <input type="date" id="fecha">
+
+            <!-- Botón de reserva -->
+            <button class="btn-reserva" onclick="reservar()">Reservar</button>
+        </div>
+    </div>
+
+    <script src="3.js"></script>
+</body>
+</html>
+
+
+
